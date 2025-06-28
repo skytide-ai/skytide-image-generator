@@ -99,8 +99,7 @@ async function htmlToImage(htmlContent) {
     // Tomar screenshot del elemento body completo
     const imageBuffer = await page.screenshot({
       type: 'png',
-      fullPage: true,
-      quality: 100
+      fullPage: true
     });
     
     return imageBuffer;
